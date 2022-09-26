@@ -74,7 +74,7 @@ class CoffeeHome extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
-        Text(AppString.findBestLabel, style: Styles.text25),
+        Text(AppString.findBestLabel, style: Styles.text22),
         Text(AppString.coffeeForYouLabel, style: Styles.text25),
       ],
     );
