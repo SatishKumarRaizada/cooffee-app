@@ -4,7 +4,7 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 
 var rootHandler = Handler(handlerFunc: (context, params) {
-  return const CoffeeTab();
+  return CoffeeTab();
 });
 
 var coffeeDetailHandler = Handler(handlerFunc: (context, params) {

@@ -5,13 +5,9 @@ import 'package:coffee_finder/feature/coffee_detail/widgets/coffee_size_widget.d
 import 'package:coffee_finder/theme/app_style.dart';
 import 'package:flutter/material.dart';
 
-class CoffeeDetail extends StatefulWidget {
+class CoffeeDetail extends StatelessWidget {
   const CoffeeDetail({Key? key}) : super(key: key);
-  @override
-  State<CoffeeDetail> createState() => _CoffeeDetailState();
-}
 
-class _CoffeeDetailState extends State<CoffeeDetail> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -45,7 +41,7 @@ class _CoffeeDetailState extends State<CoffeeDetail> {
                   SizedBox(height: height * 0.02),
                   CoffeeSizeWidget(),
                   SizedBox(height: height * 0.04),
-                  _priceWidget(),
+                  _priceWidget(context),
                 ],
               ),
             )
@@ -55,7 +51,7 @@ class _CoffeeDetailState extends State<CoffeeDetail> {
     );
   }
 
-  Widget _priceWidget() {
+  Widget _priceWidget(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final height = size.height;
     final width = size.width;

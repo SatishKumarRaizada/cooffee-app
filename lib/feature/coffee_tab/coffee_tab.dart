@@ -9,13 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
 
-class CoffeeTab extends ConsumerStatefulWidget {
-  const CoffeeTab({Key? key}) : super(key: key);
-  @override
-  ConsumerState<CoffeeTab> createState() => _ConsumerState();
-}
-
-class _ConsumerState extends ConsumerState<CoffeeTab> {
+class CoffeeTab extends StatelessWidget {
+  CoffeeTab({Key? key}) : super(key: key);
   final tabItems = <Widget>[
     const CoffeeHome(),
     const CoffeeCart(),
