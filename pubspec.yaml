@@ -1,0 +1,61 @@
+name: coffee_finder
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  fluro: ^2.0.3
+  flutter_svg: ^1.1.5
+  http: ^0.13.5
+  intl: ^0.17.0
+  flutter_riverpod: ^1.0.4
+  shimmer: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - assets/data/
+  
+  fonts:
+    - family: LatoRegular
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+
+    - family: LatoBold
+      fonts:
+        - asset: assets/fonts/Lato-Bold.ttf
+    
+    - family: LatoItalic
+      fonts:
+        - asset: assets/fonts/Lato-Italic.ttf
+    
+    - family: LatoLight
+      fonts:
+        - asset: assets/fonts/Lato-Light.ttf
+
+    - family: LatoThin
+      fonts:
+        - asset: assets/fonts/Lato-Thin.ttf
+    
+    - family: LatoThinItalic
+      fonts:
+        - asset: assets/fonts/Lato-ThinItalic.ttf
+
